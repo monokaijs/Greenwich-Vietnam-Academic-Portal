@@ -1,0 +1,44 @@
+{
+  "name": "fap",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^7.1.4",
+    "cordova-browser": "^5.0.4",
+    "cordova-plugin-cookiemaster": "^1.0.5",
+    "cordova-plugin-splashscreen": "^5.0.3",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-nativestorage": "^2.3.2",
+    "cordova-plugin-inappbrowser": "^3.2.0",
+    "cordova-plugin-advanced-http": "^2.4.1",
+    "com.cordova.plugins.cookiemaster": "~1.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-nativestorage": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-advanced-http": {
+        "OKHTTP_VERSION": "3.10.0"
+      },
+      "com.cordova.plugins.cookiemaster": {},
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "browser",
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "cordova-plugin-nativestorage": "^2.3.2",
+    "cordova-plugin-inappbrowser": "^3.2.0",
+    "cordova-plugin-advanced-http": "^2.4.1"
+  }
+}
