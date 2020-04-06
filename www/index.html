@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2196f3">
+    <title>newUI</title>
+    <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monokaijs/MonokaiToolkitConfig/fonts/GoogleSans.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body style="min-width: 360px; min-height: 600px">
+<div id="app" class="">
+    <div class="view view-main view-init safe-areas" data-url="/">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="title sliding student-name">Greenwich FAP</div>
+                    <div class="right">
+                        <a class="link toggle-dark-mode">
+                            <i class="material-icons">nights_stay</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar tabbar toolbar-top">
+                <div class="toolbar-inner">
+                    <a href="#tab-home" class="tab-link tab-link-active">
+                        <span class="material-icons active">watch_later</span>
+                        <span class="material-icons inactive">schedule</span>
+                    </a>
+                    <a href="#tab-grade" class="tab-link">
+                        <span class="material-icons active">check_circle</span>
+                        <span class="material-icons inactive">check_circle_outline</span>
+                    </a>
+                    <a href="#tab-settings" class="tab-link">
+                        <span class="material-icons active">album</span>
+                        <span class="material-icons inactive">adjust</span>
+                    </a>
+                    <a href="#tab-notifications" class="tab-link">
+                        <span class="material-icons active">notifications</span>
+                        <span class="material-icons inactive">notifications_none</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tabs">
+                <div id="tab-home" class="tab page-content tab-active">
+                    <div class="view view-home"></div>
+                </div>
+                <div id="tab-grade" class="tab page-content">
+                    <div class="view view-grade"></div>
+                </div>
+                <div id="tab-settings" class="tab page-content">
+                    <div class="view view-settings"></div>
+                </div>
+                <div id="tab-notifications" class="tab page-content">
+                    <div class="view view-notifications"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup login-screen">
+        <div class="view view-init">
+            <div class="page">
+                <div class="page-content login-screen-content" style="display: flex">
+                    <div style="margin: auto">
+                        <div class="login-screen-title">
+                            <img src="img/Logo-Greenwich.png" style="width: 50%; max-width: 380px;" alt="Greenwich"/>
+                        </div>
+                        <p style="display: block; text-align: center; padding: 10px;">
+                            Un-official AP cho sinh viên Greenwich Việt Nam
+                        </p>
+                        <div class="block inset list">
+                            <ul>
+                                <li class="item-content item-input item-input-outline">
+                                    <div class="item-inner">
+                                        <div class="item-input-wrap input-dropdown-wrap">
+                                            <select placeholder="Chọn địa điểm" id="sel-locations">
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="block no-margin-top">
+                            <a class="button button-login" href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="cordova.js"></script>
+<script src="framework7/js/framework7.bundle.min.js"></script>
+<script src="js/jquery.js"></script>
+<!-- core -->
+<script src="js/core/nstudio.js"></script>
+<script src="js/core/fap.js"></script>
+<!-- customizable -->
+<script src="js/routes.js"></script>
+
+<script src="js/routes.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

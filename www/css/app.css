@@ -1,0 +1,108 @@
+body {
+  font-family: "Google Sans", serif;
+  --f7-navbar-text-color: white;
+  --cus-col-mauve: #c89ce4;
+  --cus-col-flamingo: #f78fb3;
+  --cus-col-rogue: #f8a5c2;
+  --cus-col-rosy: #f7d794;
+  --cus-col-summertime: #f5cd79;
+  --f7-tabbar-link-inactive-color: white;
+  --f7-navbar-link-color: white;
+  --f7-tabbar-link-active-color: white;
+}
+
+#app {
+  transition: all .3s ease;
+  --f7-navbar-bg-color: var(--f7-theme-color);
+  --f7-toolbar-bg-color: var(--f7-theme-color);
+  --f7-bars-bg-color: var(--f7-theme-color);
+}
+.page {
+  transition: all .3s ease;
+}
+
+.choose-theme-color .material-icons {
+  color: var(--f7-theme-color);
+}
+
+.tab-link .active {
+  display: none;
+}
+.tab-link-active .active {
+  display: initial;
+}
+.tab-link-active .inactive {
+  display: none;
+}
+
+.block-strong {
+  background-color: rgba(33, 33, 33, .04);
+}
+
+.timeline-item-divider.attended {
+  background: var(--f7-color-green)!important;
+}
+.timeline-item-divider.absent {
+  background: var(--f7-color-red)!important;
+}
+.timeline-item-divider.not-yet {
+  background: var(--f7-color-orange)!important;
+}
+
+.timeline-item-inner.attended {
+  border: 1px solid var(--f7-color-green)!important;
+}
+.timeline-item-inner.absent {
+  border: 1px solid var(--f7-color-red)!important;
+}
+.timeline-item-inner.not-yet {
+  border: 1px solid var(--f7-color-orange)!important;
+}
+
+.color-theme-white .message-sent .message-bubble {
+  --f7-message-sent-text-color: black;
+}
+
+.bg-mauve-purple {
+  --cus-col-mauve-dark: #b57ee0;
+  --f7-page-bg-color: #c89ce4!important;
+  --f7-block-strong-bg-color: #b57ee0!important;
+  --f7-list-bg-color: #b57ee0!important;
+  --f7-navbar-bg-color: #b57ee0!important;
+  --f7-navbar-bg-image: #b57ee0!important;
+  --f7-bars-bg-color: #b57ee0!important;
+  --f7-bars-bg-image: #b57ee0!important;
+  --f7-timeline-item-inner-bg-color: #b57ee0!important;
+}
+
+.login-screen-content {
+  height: 100%!important;
+  background-image: url("../img/login-bg-bottom.svg"), url("../img/login-bg-top.svg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  background-size: 70% auto, 60% auto;
+}
+
+.timeline-item-date.today {
+  color: var(--f7-theme-color);
+}
+
+.scroll-menu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scroll-menu a {
+  background-color: rgba(var(--f7-theme-color-rgb), 0.5);
+  margin-left: 15px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 99px;
+}
+
+.scroll-menu a.selected {
+  background-color: #777;
+}

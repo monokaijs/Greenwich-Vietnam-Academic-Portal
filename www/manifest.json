@@ -1,0 +1,20 @@
+{
+  "name": "MonokaiToolkit",
+  "version": "1.0",
+  "description": "Something that you might like ;)",
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.facebook.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["js/jquery.js", "js/core/background.js", "js/core/facebook.js", "js/core/nstudio.js", "js/runtime/background.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/; object-src 'self'",
+  "manifest_version": 2
+}
